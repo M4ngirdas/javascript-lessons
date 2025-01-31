@@ -2,5 +2,7 @@
 
 ## 📅 I started in 2025-01-31
 
--  [x]learned some basics
+### Day 1
+
+-  learned some basics
 -  learned variables (boolean and strings)
