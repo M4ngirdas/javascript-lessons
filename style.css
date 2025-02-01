@@ -5,5 +5,10 @@
 
 body {
     font-family: Poppins-Regular;
-    font-size: 2em;
+    font-size: 1em;
+    text-align: center;
+}
+
+#submitb {
+    width: 150px;
 }

@@ -1,18 +1,11 @@
-let students = 30;
+let x;
+let y;
+let z;
 
-//students = students + 1;
-//students = students - 1;
-//students = students * 2;
-//students = students / 2;
-//students = students ** 3;
-//let extraStudents = students % 3;
+x = Number(x);
+y = String(y);
+z = Boolean(z);
 
-//students += 3;
-//students -= 3;
-//students *= 3;
-//students /= 3;
-//students **= 3
-//students %= 3;
-
-//students++;
-//students--;
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
