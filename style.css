@@ -9,6 +9,25 @@ body {
     text-align: center;
 }
 
-#submitb {
-    width: 150px;
+#countLabel {
+    display: block;
+    font-weight: bold;
+    font-size: 5em;
+
+}
+
+.buttons {
+    font-weight: bold;
+    font-size: 1em;
+    padding: 15px 20px;
+    margin: 3px;
+    background-color: hsl(9, 61%, 64%);
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons:hover {
+    background-color: hsl(9, 74%, 74%);
 }

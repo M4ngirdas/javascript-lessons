@@ -16,6 +16,12 @@
     
 ---
 ### Day 2
+
 - learned accept user input
 - type conversion
 ---
+### Day 3
+
+- learned constants
+- math objects
+- made a counting program
