@@ -25,3 +25,7 @@
 - learned constants
 - math objects
 - made a counting program
+---
+### Day 4
+- made a random number generator
+- learned if statements
