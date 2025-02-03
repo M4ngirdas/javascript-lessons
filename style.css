@@ -9,25 +9,42 @@ body {
     text-align: center;
 }
 
-#countLabel {
-    display: block;
-    font-weight: bold;
-    font-size: 5em;
-
-}
-
-.buttons {
-    font-weight: bold;
-    font-size: 1em;
-    padding: 15px 20px;
-    margin: 3px;
-    background-color: hsl(9, 61%, 64%);
-    border: 2px solid hsl(0, 0%, 0%);
-    border-radius: 5px;
+#rollbutton {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 10px;
+    background-color: hsl(268, 33%, 67%);
+    box-shadow: 0px 0px 3px;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 15px 10px
 }
 
-.buttons:hover {
-    background-color: hsl(9, 74%, 74%);
+#rollbutton:hover {
+    background-color: hsl(268, 23%, 53%);
+}
+
+#label1 {
+    margin-top: 5px;
+}
+
+.myLabels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
 }
