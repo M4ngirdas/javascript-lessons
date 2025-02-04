@@ -8,17 +8,3 @@ body {
     font-size: 2em;
     text-align: center;
 }
-
-#mySubmit {
-    background-color: hsl(73, 77%, 80%);
-    border: 2px solid hsl(0, 0%, 0%);
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-#mySubmit:hover {
-    background-color: hsl(73, 51%, 74%);
-}

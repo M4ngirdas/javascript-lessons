@@ -29,3 +29,8 @@
 ### Day 4
 - made a random number generator
 - learned if statements
+---
+### Day 5
+- learned checked property
+- ternary operator
+- switches
