@@ -34,3 +34,7 @@
 - learned checked property
 - ternary operator
 - switches
+---
+### Day 6
+- learned string methods
+- string slices

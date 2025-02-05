@@ -1,24 +1,9 @@
-let testScore = 80;
-let letterGrade;
-
-switch (true) {
-    case testScore >= 90:
-        letterGrade = "A";
-        break;
-    case testScore >= 80:
-        letterGrade = "B";
-        break;
-    case testScore >= 70:
-        letterGrade = "C";
-        break;
-    case testScore >= 60:
-        letterGrade = "C";
-        break;
-    default:
-        letterGrade = "F";
 
 
+const email = "example@gmail.com"
 
-}
+let username = email.slice(0, email.indexOf("@"))
+let extension = email.slice(email.indexOf("@"))
 
-console.log(letterGrade)
+console.log(username);
+console.log(extension);
