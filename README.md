@@ -37,4 +37,10 @@
 ---
 ### Day 6
 - learned string methods
-- string slices
+- string slicing
+---
+### Day 7
+- learned method chaining
+- logical operators
+- strict equality
+- while loops

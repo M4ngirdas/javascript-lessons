@@ -1,9 +1,18 @@
+// WHILE LOOPS
 
 
-const email = "example@gmail.com"
+do {
+    username = window.prompt(`Iveskite slapyvardi`);
+    password = window.prompt(`Iveskite slaptazodi`);
 
-let username = email.slice(0, email.indexOf("@"))
-let extension = email.slice(email.indexOf("@"))
+    if (username === "myUsername" && password === "myPassword") {
+        loggedIn = true;
+        console.log("Jus prisijungete!");
 
-console.log(username);
-console.log(extension);
+    }
+    else {
+        console.log("neteisingi duomenys! pabandykite is naujo!");
+    }
+
+} while (!loggedIn)
+
