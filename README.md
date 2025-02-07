@@ -44,3 +44,7 @@
 - logical operators
 - strict equality
 - while loops
+---
+### Day 8
+- learned for loops
+- made a number guessing game

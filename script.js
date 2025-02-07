@@ -1,18 +1,32 @@
-// WHILE LOOPS
+const minNum = 1;
+const maxNum = 50;
+const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 
+let attempts = 0;
+let guess;
+let running = true;
 
-do {
-    username = window.prompt(`Iveskite slapyvardi`);
-    password = window.prompt(`Iveskite slaptazodi`);
+while (running) {
+    guess = window.prompt(`Atspėkite skaičių nuo ${minNum} iki ${maxNum}!`);
+    guess = Number(guess);
 
-    if (username === "myUsername" && password === "myPassword") {
-        loggedIn = true;
-        console.log("Jus prisijungete!");
-
+    if (isNaN(guess)) {
+        window.alert("Prašau įveskite tinkamą numerį!");
+    }
+    else if (guess < minNum || guess > maxNum) {
+        window.alert("Skaičius nėra tinkamame intervale! Bandykite dar kartą.");
     }
     else {
-        console.log("neteisingi duomenys! pabandykite is naujo!");
+        attempts++;
+        if (guess < answer) {
+            window.alert("PER MAŽAS! Pabandykite iš naujo!");
+        }
+        else if (guess > answer) {
+            window.alert("PER DIDELIS! Pabandykite iš naujo!");
+        }
+        else {
+            window.alert(`TEISINGAI! Skaičius buvo ${answer}. Jūs atspėjote per ${attempts} kartą(-us)!`);
+            running = false;
+        }
     }
-
-} while (!loggedIn)
-
+}
