@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: madeTommy-Regular;
+    src: url(../fonts/madeTommy-Regular.otf);
+}
+
+@font-face {
+    font-family: Coolvetica-Regular;
+    src: url(../fonts/Coolvetica\ Rg.otf);
+}
+
+@font-face {
+    font-family: LEMONMILK-Regular;
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
+
+body {
+    font-family: madeTommy-Regular;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.placeholder {
+    text-align: center;
+}
+
+#mySubmit {
+    cursor: pointer;
+    padding: 7px 30px;
+}
