@@ -52,3 +52,8 @@
 ### Day 9
 - learned functions
 - revised some themes i learned before
+---
+### Day 10
+- learned variable scope
+- arrays
+- made a temperature conversion program

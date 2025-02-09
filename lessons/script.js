@@ -1,32 +1,26 @@
 
 
+const textBox = document.getElementById("numberBox");
+const toFahrenheit = document.getElementById("toFahrenheit");
+const toCelsius = document.getElementById("toCelsius");
+const result = document.getElementById("result");
+let temp;
 
-function add(x, y) {
-    let result = x + y;
-    return result;
-}
-function subtract(x, y) {
-    return x - y;
-}
 
-function multiply(x, y) {
-    return x * y;
-}
 
-function divide(x, y) {
-    return x / y;
-}
-function isEven(number) {
-    return number % 2 === 0 ? true : false;
-}
-function isValidEmail(email) {
-    if (email.includes("@")) {
-        return true;
+function convert() {
+
+    if (toFahrenheit.checked) {
+        temp = Number(textBox.value);
+        temp = temp * 9 / 5 + 32;
+        result.textContent = temp.toFixed(1) + "°F";
+    }
+    else if (toCelsius.checked) {
+        temp = Number(textBox.value);
+        temp = (temp - 32) * (5/9);
+        result.textContent = temp.toFixed(1) + "°C";
     }
     else {
-        return false;
+        result.textContent = "PASIRINKITE VIENETĄ!"
     }
 }
-
-console.log(isValidEmail("example@gmail.com"))
-console.log(isValidEmail("elonmusk.com"))

@@ -7,7 +7,21 @@
 </head>
 
 <body>
-    
+
+    <form>
+        <h1>Temperatūros skaičiuoklė</h1>
+        <input type="number" id="numberBox" value="0"><br>
+
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celsijus ➜ Farenheitas</label><br>
+
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Farenheitas ➜ Celsijus</label><br>
+
+        <button id="mySubmit" type="button" onclick="convert()">Apskaičiuoti</button>
+        <p id="result"></p>
+    </form>
+
     <script src="script.js"></script>
 </body>
 
