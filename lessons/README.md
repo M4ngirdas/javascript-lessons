@@ -48,3 +48,7 @@
 ### Day 8
 - learned for loops
 - made a number guessing game
+---
+### Day 9
+- learned functions
+- revised some themes i learned before

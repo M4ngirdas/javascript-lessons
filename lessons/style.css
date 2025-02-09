@@ -3,7 +3,12 @@
     src: url(fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: LEMONMILK-Regular;
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
+
 body {
-    font-family: Poppins-Regular;
-    font-size: 2em;
+    font-family: LEMONMILK-Regular;
+    font-size: 1.5em;
 }
