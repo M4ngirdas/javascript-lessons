@@ -1,41 +1,21 @@
 
 
+let age = 15;
+let message = age >= 18 ? "You are an adult!" : "You are a minor!"
 
-function sum(...numbers) {
+console.log(message);
 
-    let result = 0;
-    for (let number of numbers) {
-        result += number;
-    }
-    return result;
-}
+let time = 8;
+let greeting = time < 12 ? "Good morning!" : "Good afternoon!"
 
+console.log(greeting);
 
+let isStudent = true;
+let info = isStudent ? "You are a student!" : "You are not a student!"
 
-function getAverage(...numbers) {
+console.log(info);
 
-    let result = 0;
-    for (let number of numbers) {
-        result += number;
-    }
-    return result / numbers.length;
-}
+let purchaseAmount = 99;
+let discount = purchaseAmount >= 100 ? 10 : 0;
 
-
-
-const total = getAverage(75, 100, 85, 90, 50);
-
-console.log(`The average is ${total}!`);
-
-
-
-
-
-
-function combineStrings(...strings){
-    return strings.join(" ");
-}
-
-const fullName = combineStrings("Mr.", "Spongebob", "Squarepants", "III");
-
-console.log(fullName);
+console.log(`Your total is €${purchaseAmount - purchaseAmount * (discount/100)}`)

@@ -7,10 +7,23 @@
 </head>
 
 <body>
-    <label>Enter your age</label><br>
-    <input type="text" id="myText"><br>
+    <label for="myCheckbox">Subscribe</label>
+    <input type="checkbox" id="myCheckBox"><br><br>
+
+    <label for="visaBtn">visa</label>
+    <input type="radio" id="visaBtn" name="card"><br>
+
+    <label for="masterBtn">mastercard</label>
+    <input type="radio" id="masterBtn" name="card"><br>
+
+    <label for="debitBtn">debit</label>
+    <input type="radio" id="debitBtn" name="card"><br><br>
+
     <button type="submit" id="mySubmit">Submit</button>
-    <p id="resultElement"></p>
+
+    <p id="subResult"></p>
+    <p id="cardResult"></p>
+
     <script src="script.js"></script>
 </body>
 
