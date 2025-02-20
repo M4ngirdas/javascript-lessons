@@ -1,18 +1,36 @@
 
 
-let loggedIn = false;
-let username;
-let password;
+const minNum = 1;
+const maxNum = 50;
+const answer = Math.floor(Math.random() * (maxNum - minNum + 1));
 
-while(!loggedIn){
-    username = window.prompt("Please enter your username!");
-    password = window.prompt("Please enter your password!");
+let attempts = 0;
+let guess;
+let running = true;
 
-    if(username === "myUsername" && password === "myPassword"){
-        loggedIn = true;
-        console.log("You are logged in!");
+while (running) {
+
+    guess = window.prompt(`Guess a number between ${minNum} - ${maxNum}`)
+    guess = Number(guess)
+    console.log(typeof guess, guess)
+
+    if (isNaN(guess)) {
+        window.alert("Please enter a valid number!")
     }
-    else{
-        console.log("Invalid credentials, please try again!");
+    else if (guess < minNum || guess > maxNum) {
+        window.alert("Please enter a valid number!")
+    }
+    else {
+        attempts++;
+        if (guess < answer) {
+            window.alert("TOO LOW! TRY AGAIN!")
+        }
+        else if (guess > answer) {
+            window.alert("TOO HIGH! TRY AGAIN!")
+        }
+        else {
+            window.alert(`CONGRATULATIONS! You are correct! The answer was ${answer} It took you ${attempts} attempts`)
+            running = false;
+        }
     }
 }
