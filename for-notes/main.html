@@ -8,6 +8,22 @@
 
 <body>
 
+    <form>
+        <h1><span>Temperature</span> conversion</h1>
+        <input type="number" id="textBox" value="0"><br>
+
+    <div id="myTemperature">
+        <label for="toFahrenheit"><span class="myCelsius">Celsius</span> ➜ <span class="myFahrenheit">Fahrenheit</span></label>
+        <input type="radio" id="toFahrenheit" name="unit"><br>
+        
+        <label for="toCelsius"><span class="myFahrenheit">Fahrenheit</span> ➜ <span class="myCelsius">Celsius</span></label>
+        <input type="radio" id="toCelsius" name="unit"><br>
+    </div>
+
+        <button type="button" onclick="convert()">submit</button>
+        
+        <p id="result"></p>
+    </form>
     <script src="interaction.js"></script>
 </body>
 

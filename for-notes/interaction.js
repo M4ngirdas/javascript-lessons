@@ -1,46 +1,25 @@
 
 
-let userName = "Man girdas";
+const textBox = document.getElementById("textBox");
+const toFahrenheit = document.getElementById("toFahrenheit");
+const toCelsius = document.getElementById("toCelsius");
+const result = document.getElementById("result");
 
-console.log(`The first character of your username is ${userName.charAt(0)}`);
+let temp;
 
-console.log(`The index of letter d is ${userName.indexOf("d")}`);
-
-console.log(`The last index of letter a is ${userName.lastIndexOf("a")}`);
-
-console.log(`Your username has ${userName.length} letters`);
-
-userName = userName.trim();
-
-console.log(userName, "to trim extra space from your username use .trim")
-
-userName = userName.toUpperCase();
-
-console.log(userName, "to make your username upper/lower case use .toUpperCase or .toLowerCase")
-
-userName = userName.repeat(3);
-
-console.log(userName, "i repeated my username 3 times using .repeat")
-
-let result = userName.startsWith(" ");
-
-console.log(`Does my username start with an empty space? ${result}`);
-
-let info = userName.includes(" ");
-
-console.log(`Does my username include an empty space? ${info}`)
-
-
-
-
-let phoneNumber = "123-456-7890";
-
-phoneNumber = phoneNumber.replaceAll("-", " ");
-
-console.log(phoneNumber);
-
-let lastName = "Addams";
-
-lastName = lastName.padStart(10, "A");
-
-console.log(lastName)
+function convert(){
+    
+    if(toFahrenheit.checked){
+        temp = Number (textBox.value);
+        temp = temp * 9 / 5 + 32;
+        result.textContent = temp.toFixed(1) + "°F";
+    }
+    else if (toCelsius.checked){
+        temp = Number (textBox.value);
+        temp = (temp - 32) * (5/9);
+        result.textContent = temp.toFixed(1) + "°C";
+    }
+    else{
+        result.textContent = "Select a unit!"
+    }
+}
