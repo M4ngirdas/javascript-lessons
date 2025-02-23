@@ -60,7 +60,7 @@ button:hover {
     box-shadow: 0 0 10px #203970,
         0 0 15px #22345a,
         0 0 20px #657cad;
-    transform: scale(1.05);
+    transform: scale(1.05)translateY(-5px);
 }
 
 #textBox {
