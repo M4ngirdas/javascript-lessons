@@ -1,25 +1,40 @@
 
+function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols){
 
-const textBox = document.getElementById("textBox");
-const toFahrenheit = document.getElementById("toFahrenheit");
-const toCelsius = document.getElementById("toCelsius");
-const result = document.getElementById("result");
+    const lowercaseChars = "abcdefghijklmnopqrstuvwxyz"
+    const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    const numberChars = "0123456789";
+    const symbolChars = "!@#$%^&*()_+-"
 
-let temp;
+    let allowedChars = "";
+    let password = "";
 
-function convert(){
-    
-    if(toFahrenheit.checked){
-        temp = Number (textBox.value);
-        temp = temp * 9 / 5 + 32;
-        result.textContent = temp.toFixed(1) + "°F";
+    allowedChars += includeLowercase ? lowercaseChars : "";
+    allowedChars += includeUppercase ? uppercaseChars : "";
+    allowedChars += includeNumbers ? numberChars : "";
+    allowedChars += includeSymbols ? symbolChars : "";
+
+    if(length <= 0){
+        return `(password length must be atleast one!)`;
     }
-    else if (toCelsius.checked){
-        temp = Number (textBox.value);
-        temp = (temp - 32) * (5/9);
-        result.textContent = temp.toFixed(1) + "°C";
+    if(allowedChars.length === 0){
+        return `(at least one set of character needs to be selected!)`;
     }
-    else{
-        result.textContent = "Select a unit!"
+
+    for(let i = 0; i < length; i++){
+        const randomIndex = Math.floor(Math.random() * allowedChars.length);
+        password += allowedChars[randomIndex];
     }
+
+    return password;
 }
+
+const passwordLength = 12;
+const includeLowercase = true;
+const includeUppercase = true;
+const includeNumbers = true;
+const includeSymbols = true;
+
+const password = generatePassword(passwordLength, includeLowercase, includeUppercase, includeNumbers, includeSymbols);
+
+console.log(`Generated password: ${password}`);

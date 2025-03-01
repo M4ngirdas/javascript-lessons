@@ -1,99 +1,11 @@
 * {
     font-family: SF-Regular, Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    font-weight: 900;
-    cursor: default;
 }
 
 @font-face {
     font-family: SF-Regular;
     src: url(../fonts/SF-Pro-Display-Regular.otf);
 }
-
-body {
-    font-size: 1.5em;
+body{
     text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 400px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    padding: 1rem;
-    max-width: 35rem;
-    margin: auto;
-    box-shadow: 0 0 3px white;
-}
-
-form h1 {
-    letter-spacing: 3px;
-    margin-bottom: 30px;
-}
-
-button {
-    background: linear-gradient(90deg, #6cdfdf 20%, #4d4c9c 80%);
-    width: 150px;
-    padding: 8px 20px;
-    margin: 20px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px #203970;
-    transition: 0.2s ease-in-out;
-}
-
-button:hover {
-    box-shadow: 0 0 10px #203970,
-        0 0 15px #22345a,
-        0 0 20px #657cad;
-    transform: scale(1.05)translateY(-5px);
-}
-
-#textBox {
-    text-align: center;
-}
-
-#myTemperature {
-    line-height: 50px;
-    letter-spacing: 3px;
-}
-
-form h1 span {
-    background: linear-gradient(90deg, #6cdfdf 20%, #4d4c9c 80%);
-    background-clip: text;
-    color: transparent;
-}
-
-.myCelsius {
-    color: #5757d1;
-}
-
-.myFahrenheit {
-    color: #ac4e4e;
-}
-
-p#result {
-    font-size: 40px;
-    border-bottom: 4px solid transparent;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-p#result:hover{
-    transform: scale(1.09);
-    border-bottom: 4px solid #ffffff;
 }
