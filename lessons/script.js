@@ -1,15 +1,18 @@
 
-sum(displayPage, 57, 36 )
 
-function sum(callback, x, y){
-    let result = x + y;
-    callback(result);
+let fruits = ["apple", "banana", "coconut", "orange"];
+
+fruits.forEach(capitalize)
+fruits.forEach(display);
+
+function upperCase(element, index, array){
+    array[index] = element.toUpperCase();
 }
 
-function displayConsole(result){
-    console.log(result)
+function capitalize(element, index, array){
+    array[index] = element.charAt(0).toUpperCase() + element.slice(1)
 }
 
-function displayPage(result){
-    document.getElementById("myH1").textContent = result; 
+function display(element){
+    console.log(element);
 }
