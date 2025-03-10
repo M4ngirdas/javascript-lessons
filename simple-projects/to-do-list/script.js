@@ -4,15 +4,15 @@ const inputBox = document.getElementById("inputBox");
 const listContainer = document.getElementById("list-container");
 
 // Function to Add Tasks
-function addTask (){
+function addTask() {
 
-    if(inputBox.value === ""){
+    if (inputBox.value === "") {
 
         alert("You should write something!");
 
     }
 
-    else{
+    else {
 
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
@@ -29,7 +29,7 @@ function addTask (){
 
 }
 
-// Handling Click Events (Check or Delete Tasks)
+// Marking Tasks as Done / Deleting Tasks
 listContainer.addEventListener("click", function (e) {
 
     if (e.target.tagName === "LI") {
